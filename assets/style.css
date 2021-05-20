@@ -6,6 +6,13 @@ body {
   font-family: sans-serif;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
 .flex-container-column {
   display: flex;
   flex-direction: column;
@@ -60,8 +67,32 @@ body {
   margin-top: 20px;
 }
 
+.history {
+  width: 80%;
+  margin: 30px auto 0 auto;
+  overflow: scroll;
+}
+
+th,
+td {
+  padding: 16px;
+  text-align: center;
+}
+
+th {
+  background-color: orange;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #d2d2d2;
+}
 @media screen and (max-width: 513px) {
   .button {
     padding: 10px;
+  }
+
+  .history {
+    width: 100%;
   }
 }
